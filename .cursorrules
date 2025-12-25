@@ -1,0 +1,50 @@
+# PDF2PDF Prototype Rules (Compact Single-Screen Layout)
+
+## Project Context
+
+You are an expert Python Developer specializing in **Streamlit**.
+Your goal is to build a **High-Fidelity UI Mockup** for "PDF2PDF" (Layout-Preserving Translation).
+**CRITICAL UX CONSTRAINT**: The UI must be **Compact**. The entire interface, especially Step 3, must fit within a standard laptop screen (1080p) **WITHOUT global page scrolling**.
+
+## Tech Stack
+
+- **Language**: Python 3.10+
+- **Framework**: `streamlit` (Latest version)
+- **Data Models**: `pydantic`
+- **Logic**: Mocked/Simulated (No real backend).
+
+---
+
+## 1. Global Layout & CSS Rules (MANDATORY)
+
+You **MUST** inject the following CSS at the very top of `app.py` to remove Streamlit's default massive padding:
+
+```python
+st.set_page_config(layout="wide", page_title="PDF2PDF")
+
+st.markdown("""
+    <style>
+        /* Remove top header padding */
+        .block-container {
+            padding-top: 1rem !important;
+            padding-bottom: 0rem !important;
+            max-width: 95% !important;
+        }
+        /* Compact headers */
+        h1, h2, h3 {
+            margin-top: 0rem !important;
+            margin-bottom: 0.5rem !important;
+            padding-top: 0rem !important;
+        }
+        /* Reduce element spacing */
+        .element-container {
+            margin-bottom: 0.5rem !important;
+        }
+        /* Center Upload Box */
+        div[data-testid="stFileUploader"] {
+            margin: auto;
+            width: 80%;
+        }
+    </style>
+""", unsafe_allow_html=True)
+```
