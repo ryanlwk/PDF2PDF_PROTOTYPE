@@ -1,12 +1,12 @@
 """
 PDF2PDF Prototype - High-Fidelity UI Mockup
 A Streamlit-based demonstration of the "Chat & Modify" workflow.
-OPTIMIZED FOR: Compact single-screen layout & Reliable PDF Display (Based on user preference)
+OPTIMIZED FOR: Compact single-screen layout & Reliable PDF Display
+FINAL TUNING: Optimized Column Ratios [5, 5, 2]
 """
 import streamlit as st
 import os
-# 確保您已經安裝: pip install streamlit-pdf-viewer
-from streamlit_pdf_viewer import pdf_viewer 
+from streamlit_pdf_viewer import pdf_viewer
 from models import JobConfig, ChatMessage, GlossaryType, LayoutPriority
 from backend_mock import (
     mock_parse_pdf,
@@ -89,8 +89,8 @@ def render_step_indicator(current_step: int):
 # --- HELPER FUNCTION: Display PDF with streamlit-pdf-viewer ---
 def display_pdf(file_path, height=700):
     """
-    使用 streamlit-pdf-viewer 顯示 PDF。
-    這是您確認過最穩定的方法。
+    使用 streamlit-pdf-viewer 显示 PDF。
+    这是最可靠的方法，专门为 Streamlit 设计。
     """
     if not os.path.exists(file_path):
         st.error(f"📄 File not found: {file_path}")
@@ -100,10 +100,8 @@ def display_pdf(file_path, height=700):
         with open(file_path, "rb") as f:
             pdf_bytes = f.read()
         
-        # 使用 pdf_viewer
-        # 微調：既然欄位變寬了，我將 width 從 700 增加到 900，
-        # 這樣可以利用多出來的空間，減少 PDF 周圍的留白。
-        pdf_viewer(pdf_bytes, width=900, height=height)
+        # 使用 pdf_viewer，保持您驗證過的 700 寬度
+        pdf_viewer(pdf_bytes, width=700, height=height)
     except Exception as e:
         st.error(f"Error loading PDF: {str(e)}")
 
@@ -182,9 +180,8 @@ def step3_workspace():
 
     st.markdown(f"**Workspace**: {st.session_state.config.source_filename} → {st.session_state.config.target_language}")
 
-    # 🟢 關鍵修改：調整欄位比例
-    # 原本是 [4, 4, 2.5]。現在改為 [5, 5, 2]。
-    # 這會讓 Chat (右欄) 變窄，讓 PDF (左中欄) 變寬。
+    # 🟢 關鍵修改：調整欄位比例為 [5, 5, 2]
+    # 這會讓 PDF 區域更寬敞，讓 Chat 區域更緊湊
     col_L, col_R, col_Chat = st.columns([5, 5, 2])
     
     height_px = 700
@@ -199,7 +196,6 @@ def step3_workspace():
 
     with col_Chat:
         st.markdown("###### 🤖 Assistant")
-        # 配合欄位變窄，我們可以稍微減少這裡的高度，或者保持不變
         with st.container(height=height_px - 60):
             for msg in st.session_state.chat_history:
                 with st.chat_message(msg.role):

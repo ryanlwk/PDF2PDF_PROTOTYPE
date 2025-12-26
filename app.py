@@ -2,6 +2,7 @@
 PDF2PDF Prototype - High-Fidelity UI Mockup
 A Streamlit-based demonstration of the "Chat & Modify" workflow.
 OPTIMIZED FOR: Compact single-screen layout & Reliable PDF Display
+FINAL TUNING: Optimized Column Ratios [5, 5, 2] to fit MacBook Air screens better
 """
 import streamlit as st
 import os
@@ -89,7 +90,7 @@ def render_step_indicator(current_step: int):
 def display_pdf(file_path, height=700):
     """
     使用 streamlit-pdf-viewer 显示 PDF。
-    这是最可靠的方法，专门为 Streamlit 设计。
+    这是经过验证最稳定的方法。
     """
     if not os.path.exists(file_path):
         st.error(f"📄 File not found: {file_path}")
@@ -99,7 +100,7 @@ def display_pdf(file_path, height=700):
         with open(file_path, "rb") as f:
             pdf_bytes = f.read()
         
-        # 使用 pdf_viewer，设置适当的宽度以填满容器
+        # 維持 width=700，配合下方調整過的欄位比例，可以更輕鬆放入螢幕
         pdf_viewer(pdf_bytes, width=700, height=height)
     except Exception as e:
         st.error(f"Error loading PDF: {str(e)}")
@@ -179,8 +180,10 @@ def step3_workspace():
 
     st.markdown(f"**Workspace**: {st.session_state.config.source_filename} → {st.session_state.config.target_language}")
 
-    # Split View Layout
-    col_L, col_R, col_Chat = st.columns([4, 4, 2.5])
+    # 🟢 黃金比例修正：[5, 5, 2]
+    # 這會顯著壓縮最右側的 Chat 欄位，將寶貴的螢幕寬度留給 PDF。
+    # 這能讓您在不需要縮小到 50% 的情況下，也能看清楚內容。
+    col_L, col_R, col_Chat = st.columns([5, 5, 2])
     
     height_px = 700
     
