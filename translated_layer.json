@@ -1,0 +1,1762 @@
+{
+  "filename": "somatosensory.pdf",
+  "total_pages": 4,
+  "pages": [
+    {
+      "page_index": 0,
+      "width": 566.9290771484375,
+      "height": 708.661376953125,
+      "blocks": [
+        {
+          "id": "0_368_521",
+          "type": "sidebar",
+          "bbox": [
+            368.162109375,
+            428.9220275878906,
+            542.6990966796875,
+            521.3219909667969
+          ],
+          "content": "這份樣本文件旨在展示基於頁面的格式設定。它包含一本名為《感覺系統》的Wikibook的一章。本文未更改任何內容，但已移除部分內容。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 174.54,
+            "height": 92.4
+          }
+        },
+        {
+          "id": "0_56_623",
+          "type": "heading",
+          "bbox": [
+            56.692901611328125,
+            591.0125961303711,
+            483.5793762207031,
+            623.2150955200195
+          ],
+          "content": "体感系統的解剖",
+          "style": {
+            "size": 27.5,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "robotocondensed-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 426.89,
+            "height": 32.2
+          }
+        },
+        {
+          "id": "0_56_566",
+          "type": "sidebar",
+          "bbox": [
+            56.692901611328125,
+            549.2344970703125,
+            140.195556640625,
+            566.6324310302734
+          ],
+          "content": "來自Wikibooks 1",
+          "style": {
+            "size": 9.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 83.5,
+            "height": 17.4
+          }
+        },
+        {
+          "id": "0_56_528",
+          "type": "body",
+          "bbox": [
+            56.692901611328125,
+            434.8345031738281,
+            340.1575012207031,
+            528.6094818115234
+          ],
+          "content": "我們的体感系統由皮膚和肌肉、肌腱及關節的感官接收器組成。皮膚中的感受器，即稱為皮膚感受器，告訴我們溫度（溫覺感受器）、壓力和表面紋理（機械感受器）以及疼痛（痛覺感受器）。肌肉和關節中的感受器提供有關肌肉長度、肌肉張力和關節角度的信息。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 283.46,
+            "height": 93.77
+          }
+        },
+        {
+          "id": "0_56_419",
+          "type": "sidebar",
+          "bbox": [
+            56.692901611328125,
+            404.0295104980469,
+            164.72621154785156,
+            419.4866943359375
+          ],
+          "content": "皮膚感受器",
+          "style": {
+            "size": 13.2,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "robotocondensed-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 108.03,
+            "height": 15.46
+          }
+        },
+        {
+          "id": "0_56_397",
+          "type": "body",
+          "bbox": [
+            56.692901611328125,
+            330.55450439453125,
+            340.1575622558594,
+            397.92950439453125
+          ],
+          "content": "來自梅氏小體和快速適應輸入的神經信息導致在提起物體時抓握力量的調整。這些輸入在提起物體的早期階段，當物體移動一小段距離時，會以短暫的動作電位脈衝響應。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 283.46,
+            "height": 67.38
+          }
+        },
+        {
+          "id": "0_354_320",
+          "type": "sidebar",
+          "bbox": [
+            354.3306884765625,
+            174.12310791015625,
+            510.2362976074219,
+            320.6981201171875
+          ],
+          "content": "圖1：人體皮膚中的感受器：機械感受器可以是游離感受器或包覆感受器。游離感受器的例子是毛髮根部上的毛髮感受器。包覆感受器是帕金森小體和光滑皮膚（無毛）中的感受器：梅氏小體、魯菲尼小體和默克爾圓盤。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": true,
+            "serif": true,
+            "font_name": "ptserif-italic"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 155.91,
+            "height": 146.58
+          }
+        },
+        {
+          "id": "0_128_320",
+          "type": "label",
+          "bbox": [
+            128.02076721191406,
+            311.13372802734375,
+            266.6483459472656,
+            320.8414306640625
+          ],
+          "content": "有毛皮膚 光滑皮膚",
+          "style": {
+            "size": 7.8,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 138.63,
+            "height": 9.71
+          }
+        },
+        {
+          "id": "0_305_257",
+          "type": "sidebar",
+          "bbox": [
+            305.2910461425781,
+            248.33502197265625,
+            339.656005859375,
+            257.7372131347656
+          ],
+          "content": "表皮",
+          "style": {
+            "size": 7.8,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 34.36,
+            "height": 9.4
+          }
+        },
+        {
+          "id": "0_305_195",
+          "type": "sidebar",
+          "bbox": [
+            305.2910461425781,
+            186.02984619140625,
+            330.2929992675781,
+            195.4320068359375
+          ],
+          "content": "真皮",
+          "style": {
+            "size": 7.8,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 25.0,
+            "height": 9.4
+          }
+        },
+        {
+          "id": "0_110_125",
+          "type": "label",
+          "bbox": [
+            110.0200424194336,
+            112.311279296875,
+            133.6094512939453,
+            125.74298095703125
+          ],
+          "content": "帕金森小體",
+          "style": {
+            "size": 5.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 23.59,
+            "height": 13.43
+          }
+        },
+        {
+          "id": "0_228_289",
+          "type": "label",
+          "bbox": [
+            228.64093017578125,
+            282.640869140625,
+            267.5704345703125,
+            289.356689453125
+          ],
+          "content": "乳頭狀脊",
+          "style": {
+            "size": 5.6,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 38.93,
+            "height": 6.72
+          }
+        },
+        {
+          "id": "0_216_252",
+          "type": "label",
+          "bbox": [
+            216.34494018554688,
+            245.723388671875,
+            230.2579345703125,
+            252.439208984375
+          ],
+          "content": "隔片",
+          "style": {
+            "size": 5.6,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 13.91,
+            "height": 6.72
+          }
+        },
+        {
+          "id": "0_168_184",
+          "type": "label",
+          "bbox": [
+            168.71096801757812,
+            171.28997802734375,
+            193.38050842285156,
+            184.7216796875
+          ],
+          "content": "魯菲尼小體",
+          "style": {
+            "size": 5.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 24.67,
+            "height": 13.43
+          }
+        },
+        {
+          "id": "0_65_158",
+          "type": "sidebar",
+          "bbox": [
+            65.84101104736328,
+            151.8868408203125,
+            98.95571899414062,
+            158.60272216796875
+          ],
+          "content": "毛髮感受器",
+          "style": {
+            "size": 5.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 33.11,
+            "height": 6.72
+          }
+        },
+        {
+          "id": "0_56_203",
+          "type": "sidebar",
+          "bbox": [
+            56.8649787902832,
+            190.3870849609375,
+            289.288818359375,
+            203.81875610351562
+          ],
+          "content": "梅氏小體 皮脂腺",
+          "style": {
+            "size": 5.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 232.42,
+            "height": 13.43
+          }
+        },
+        {
+          "id": "0_71_192",
+          "type": "sidebar",
+          "bbox": [
+            71.17520904541016,
+            186.21429443359375,
+            84.54533386230469,
+            192.93017578125
+          ],
+          "content": "腺體",
+          "style": {
+            "size": 5.6,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 13.37,
+            "height": 6.72
+          }
+        },
+        {
+          "id": "0_106_251",
+          "type": "label",
+          "bbox": [
+            106.42793273925781,
+            245.02273559570312,
+            132.65330505371094,
+            251.73855590820312
+          ],
+          "content": "游離神經",
+          "style": {
+            "size": 5.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 26.23,
+            "height": 6.72
+          }
+        },
+        {
+          "id": "0_116_245",
+          "type": "label",
+          "bbox": [
+            116.68643951416016,
+            238.306884765625,
+            133.2633819580078,
+            245.022705078125
+          ],
+          "content": "末梢",
+          "style": {
+            "size": 5.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 16.58,
+            "height": 6.72
+          }
+        },
+        {
+          "id": "0_145_250",
+          "type": "label",
+          "bbox": [
+            145.4771728515625,
+            236.73095703125,
+            166.7552032470703,
+            250.16262817382812
+          ],
+          "content": "默克爾感受器",
+          "style": {
+            "size": 5.6,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 21.28,
+            "height": 13.43
+          }
+        },
+        {
+          "id": "0_56_88",
+          "type": "body",
+          "bbox": [
+            56.692901611328125,
+            70.24737548828125,
+            500.4346008300781,
+            88.50787353515625
+          ],
+          "content": "1  以下描述基於拉茲洛·扎博爾斯基（Laszlo Zaborszky）的講義筆記，他來自羅格斯大學。",
+          "style": {
+            "size": 9.1,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 443.74,
+            "height": 18.26
+          }
+        },
+        {
+          "id": "0_510_48",
+          "type": "sidebar",
+          "bbox": [
+            510.2362060546875,
+            35.66607666015625,
+            516.6162109375,
+            48.8660888671875
+          ],
+          "content": "1",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 0,
+            "width": 6.38,
+            "height": 13.2
+          }
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "width": 566.9290771484375,
+      "height": 708.661376953125,
+      "blocks": [
+        {
+          "id": "1_56_624",
+          "type": "sidebar",
+          "bbox": [
+            56.692901611328125,
+            438.1344909667969,
+            212.59849548339844,
+            624.3094940185547
+          ],
+          "content": "圖 2：哺乳動物肌肉梭狀收縮器在肌肉中的典型位置（左）、脊髓中的神經連接（中）和擴展的示意圖（右）。梭狀收縮器是一種伸展受體，具有自己的運動供應，包括幾條內梭肌纖維。一級（Ia 群）和二級（II 群）感覺末梢環繞內梭肌纖維的非收縮性中央部分。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": true,
+            "serif": true,
+            "font_name": "ptserif-italic"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 155.91,
+            "height": 186.18
+          }
+        },
+        {
+          "id": "1_226_434",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            367.35791015625,
+            510.236328125,
+            434.73291015625
+          ],
+          "content": "快速適應性感覺神經元活動，肌肉力量反射性增加，直到被握住的物體不再移動。這種對觸覺刺激的快速反應清楚地表明了体感神經元在運動活動中的作用。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 283.46,
+            "height": 67.38
+          }
+        },
+        {
+          "id": "1_226_368",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            208.9578857421875,
+            510.2363586425781,
+            368.73291015625
+          ],
+          "content": "緩慢適應的默克爾感受器負責感知形狀和質感。正如預期的那樣，負責介導形狀感知的默克爾感受器在指尖和嘴巴周圍的高密度（皮膚表面每平方毫米 50 個）存在，在其他光滑表面密度較低，在有毛皮中密度非常低。這種神經支配密度隨著時間的推移逐漸減少，因此到 50 歲時，人類指尖的密度降低到每平方毫米 10 個。與快速適應性軸突不同，緩慢適應性纖維不僅對皮膚的初始凹陷做出反應，而且對持續數秒的凹陷做出反應。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 283.46,
+            "height": 159.78
+          }
+        },
+        {
+          "id": "1_226_210",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            156.15789794921875,
+            510.2362060546875,
+            210.3328857421875
+          ],
+          "content": "激活快速適應的包囊感受器會產生振動的感覺，而緩慢適應的魯菲尼感受器則對皮膚的側面運動或伸展做出反應。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 283.46,
+            "height": 54.17
+          }
+        },
+        {
+          "id": "1_226_140",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            125.3529052734375,
+            289.9197692871094,
+            140.81011962890625
+          ],
+          "content": "痛覺感受器",
+          "style": {
+            "size": 13.2,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "robotocondensed-regular"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 63.15,
+            "height": 15.46
+          }
+        },
+        {
+          "id": "1_226_119",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            78.27789306640625,
+            510.2363586425781,
+            119.2529296875
+          ],
+          "content": "痛覺感受器具有游離神經末梢。功能上，皮膚痛覺感受器是高閾值機械感受器或多模式感受器。多模式感受器對",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 283.46,
+            "height": 40.98
+          }
+        },
+        {
+          "id": "1_56_658",
+          "type": "sidebar",
+          "bbox": [
+            56.692901611328125,
+            645.6220283508301,
+            135.81590270996094,
+            658.8220291137695
+          ],
+          "content": "來自維基教科書",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 79.12,
+            "height": 13.2
+          }
+        },
+        {
+          "id": "1_50_48",
+          "type": "sidebar",
+          "bbox": [
+            50.31290054321289,
+            35.66607666015625,
+            56.692901611328125,
+            48.8660888671875
+          ],
+          "content": "2",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 1,
+            "width": 6.38,
+            "height": 13.2
+          }
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "width": 566.9290771484375,
+      "height": 708.661376953125,
+      "blocks": [
+        {
+          "id": "2_202_621",
+          "type": "body",
+          "bbox": [
+            202.4185028076172,
+            606.9719772338867,
+            470.4111328125,
+            621.5469818115234
+          ],
+          "content": "快速適應  緩慢適應",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": true,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-bold"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 267.99,
+            "height": 14.58
+          }
+        },
+        {
+          "id": "2_59_603",
+          "type": "sidebar",
+          "bbox": [
+            59.45539855957031,
+            562.4094848632812,
+            145.50839233398438,
+            603.3845062255859
+          ],
+          "content": "表面受體 / 小 receptive field",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 86.05,
+            "height": 40.98
+          }
+        },
+        {
+          "id": "2_150_603",
+          "type": "body",
+          "bbox": [
+            150.4709014892578,
+            562.4094848632812,
+            338.8348693847656,
+            603.3845062255859
+          ],
+          "content": "毛髮受體，梅斯納氏包體：偵測昆蟲或非常細微的振動。用於識別紋理。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 188.36,
+            "height": 40.98
+          }
+        },
+        {
+          "id": "2_349_603",
+          "type": "sidebar",
+          "bbox": [
+            349.2974853515625,
+            562.4094848632812,
+            504.51849365234375,
+            603.3845062255859
+          ],
+          "content": "默克爾受體：用於空間細節，例如圓形表面邊緣或“X形” Braille。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 155.22,
+            "height": 40.98
+          }
+        },
+        {
+          "id": "2_59_558",
+          "type": "sidebar",
+          "bbox": [
+            59.45539855957031,
+            517.8469848632812,
+            134.37640380859375,
+            558.8220062255859
+          ],
+          "content": "深層受體 / 大 receptive field",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 74.92,
+            "height": 40.98
+          }
+        },
+        {
+          "id": "2_150_552",
+          "type": "body",
+          "bbox": [
+            150.4709014892578,
+            524.447021484375,
+            323.8198547363281,
+            552.2220306396484
+          ],
+          "content": "帕奇尼氏包體：一種“漫射振動”，例如用鉛筆輕拍。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 173.35,
+            "height": 27.78
+          }
+        },
+        {
+          "id": "2_349_558",
+          "type": "sidebar",
+          "bbox": [
+            349.2974853515625,
+            517.8469848632812,
+            503.1215515136719,
+            558.8220062255859
+          ],
+          "content": "魯菲尼氏包體：一種“皮膚拉伸”。用於手指關節的位置。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 153.82,
+            "height": 40.98
+          }
+        },
+        {
+          "id": "2_56_510",
+          "type": "sidebar",
+          "bbox": [
+            56.97420120239258,
+            496.3844909667969,
+            91.43720245361328,
+            510.95948791503906
+          ],
+          "content": "表 1",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": true,
+            "serif": true,
+            "font_name": "ptserif-italic"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 34.46,
+            "height": 14.57
+          }
+        },
+        {
+          "id": "2_368_368",
+          "type": "sidebar",
+          "bbox": [
+            368.162109375,
+            262.7720031738281,
+            554.2161254882812,
+            368.37200927734375
+          ],
+          "content": "請注意，圖表說明和旁註顯示在外部邊界（在頁面是左頁還是右頁時，在左邊或右邊）。此外，圖像會浮動到頁面的頂部/底部。像表格和圖 3 這樣的寬內容會侵入外部邊界。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 186.05,
+            "height": 105.6
+          }
+        },
+        {
+          "id": "2_56_481",
+          "type": "body",
+          "bbox": [
+            56.692901611328125,
+            374.2845153808594,
+            340.15753173828125,
+            481.25950622558594
+          ],
+          "content": "不僅對強烈的機械刺激，而且對熱和有害化學物質有反應。這些受體對表皮的微小穿刺有反應，其反應幅度取決於組織變形的程度。它們也對 40–60°C 範圍內的溫度有反應，並且隨著升溫呈線性函數改變其反應速率（與高溫下非有害溫感受器顯示的飽和反應相反）。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 283.46,
+            "height": 106.97
+          }
+        },
+        {
+          "id": "2_56_375",
+          "type": "body",
+          "bbox": [
+            56.692901611328125,
+            229.08450317382812,
+            340.1575927734375,
+            375.65948486328125
+          ],
+          "content": "疼痛信號可以分為不同的組成部分，這些組成部分對應於用於傳輸這些信號的不同類型的神經纖維。快速傳輸的信號，通常具有高空間分辨率，稱為第一痛或皮膚刺痛。它定位良好且易於忍受。慢得多，具有高度情感成分的組成部分稱為第二痛或灼燒痛；它定位不良且難以忍受。第三種或深層疼痛，來自內臟、肌肉和關節，也定位不良，可能為慢性，並且經常與放射痛相關。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 283.46,
+            "height": 146.57
+          }
+        },
+        {
+          "id": "2_56_213",
+          "type": "sidebar",
+          "bbox": [
+            56.692901611328125,
+            198.27951049804688,
+            141.8856964111328,
+            213.7366943359375
+          ],
+          "content": "肌肉梭",
+          "style": {
+            "size": 13.2,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "robotocondensed-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 85.19,
+            "height": 15.46
+          }
+        },
+        {
+          "id": "2_56_192",
+          "type": "body",
+          "bbox": [
+            56.692901611328125,
+            72.0045166015625,
+            340.1575622558594,
+            192.17950439453125
+          ],
+          "content": "散佈在身體上幾乎每個橫紋肌中，都是稱為肌肉梭的長而細的伸展受體。它們在原理上相當簡單，由幾個小的肌肉纖維組成，這些纖維被包圍在纖維中間三分之一的囊狀結構中。這些纖維稱為內梭纖維，與普通的外部梭纖維相對。內梭纖維的末端連接到外部梭纖維，因此每當肌肉伸展時，內梭纖維也會伸展。每個內梭纖維的中央區域都有",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 283.46,
+            "height": 120.17
+          }
+        },
+        {
+          "id": "2_322_658",
+          "type": "sidebar",
+          "bbox": [
+            322.543212890625,
+            645.6220283508301,
+            510.236083984375,
+            658.8220291137695
+          ],
+          "content": "体感系統解剖",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 187.69,
+            "height": 13.2
+          }
+        },
+        {
+          "id": "2_510_48",
+          "type": "sidebar",
+          "bbox": [
+            510.2362060546875,
+            35.66607666015625,
+            516.6162109375,
+            48.8660888671875
+          ],
+          "content": "3",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 2,
+            "width": 6.38,
+            "height": 13.2
+          }
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "width": 566.9290771484375,
+      "height": 708.661376953125,
+      "blocks": [
+        {
+          "id": "3_167_598",
+          "type": "label",
+          "bbox": [
+            167.4984893798828,
+            571.5509490966797,
+            190.9942169189453,
+            598.2590560913086
+          ],
+          "content": "力控信號",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 23.5,
+            "height": 26.71
+          }
+        },
+        {
+          "id": "3_167_526",
+          "type": "label",
+          "bbox": [
+            167.4984893798828,
+            508.7373962402344,
+            191.5877227783203,
+            526.5428161621094
+          ],
+          "content": "驅動信號",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 24.09,
+            "height": 17.81
+          }
+        },
+        {
+          "id": "3_167_450",
+          "type": "label",
+          "bbox": [
+            167.4984893798828,
+            423.87017822265625,
+            190.9942169189453,
+            450.57830810546875
+          ],
+          "content": "長度控製信號",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 23.5,
+            "height": 26.71
+          }
+        },
+        {
+          "id": "3_416_511",
+          "type": "sidebar",
+          "bbox": [
+            416.23394775390625,
+            502.577880859375,
+            431.9472351074219,
+            511.4805908203125
+          ],
+          "content": "負載",
+          "style": {
+            "size": 7.4,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 15.71,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_393_563",
+          "type": "sidebar",
+          "bbox": [
+            393.7752990722656,
+            545.2135314941406,
+            421.2549743652344,
+            563.0189514160156
+          ],
+          "content": "外部力",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 27.48,
+            "height": 17.81
+          }
+        },
+        {
+          "id": "3_312_515",
+          "type": "sidebar",
+          "bbox": [
+            312.5985107421875,
+            498.1263122558594,
+            336.60614013671875,
+            515.9317321777344
+          ],
+          "content": "肌腱器官",
+          "style": {
+            "size": 7.4,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 24.01,
+            "height": 17.81
+          }
+        },
+        {
+          "id": "3_351_516",
+          "type": "sidebar",
+          "bbox": [
+            351.7347412109375,
+            507.52362060546875,
+            393.55517578125,
+            516.4263305664062
+          ],
+          "content": "肌肉力",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 41.82,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_442_527",
+          "type": "sidebar",
+          "bbox": [
+            442.61651611328125,
+            509.9739074707031,
+            466.0380554199219,
+            527.7793273925781
+          ],
+          "content": "肌肉長度",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 23.42,
+            "height": 17.81
+          }
+        },
+        {
+          "id": "3_259_580",
+          "type": "label",
+          "bbox": [
+            259.107177734375,
+            571.7356262207031,
+            308.62847900390625,
+            580.6383361816406
+          ],
+          "content": "力反饋",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 49.52,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_230_472",
+          "type": "label",
+          "bbox": [
+            230.12486267089844,
+            445.9134826660156,
+            259.8079528808594,
+            472.6216125488281
+          ],
+          "content": "長度及速度反饋",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 29.68,
+            "height": 26.71
+          }
+        },
+        {
+          "id": "3_259_589",
+          "type": "label",
+          "bbox": [
+            259.1069030761719,
+            580.7008972167969,
+            345.2405700683594,
+            589.6035995483398
+          ],
+          "content": "力 (高爾基腱器官)",
+          "style": {
+            "size": 7.4,
+            "color": "#ed1c24",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 86.13,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_278_450",
+          "type": "label",
+          "bbox": [
+            278.46832275390625,
+            441.16314697265625,
+            305.67352294921875,
+            450.06585693359375
+          ],
+          "content": "紡錘細胞",
+          "style": {
+            "size": 7.4,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 27.21,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_239_417",
+          "type": "label",
+          "bbox": [
+            239.2147216796875,
+            408.8111267089844,
+            278.8243408203125,
+            417.7138366699219
+          ],
+          "content": "伽瑪偏置",
+          "style": {
+            "size": 7.4,
+            "color": "#757679",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 39.61,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_56_482",
+          "type": "sidebar",
+          "bbox": [
+            56.876060485839844,
+            464.84185791015625,
+            210.21026611328125,
+            482.64727783203125
+          ],
+          "content": "長度 (次級肌肉紡錘感覺神經元) 長度誤差 (初級肌肉紡錘感覺神經元)",
+          "style": {
+            "size": 7.4,
+            "color": "#ed1c24",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 153.33,
+            "height": 17.81
+          }
+        },
+        {
+          "id": "3_71_464",
+          "type": "sidebar",
+          "bbox": [
+            71.31525421142578,
+            455.9391632080078,
+            210.31613159179688,
+            464.8418731689453
+          ],
+          "content": "速度 (初級肌肉紡錘感覺神經元)",
+          "style": {
+            "size": 7.4,
+            "color": "#ed1c24",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 139.0,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_262_511",
+          "type": "label",
+          "bbox": [
+            262.86083984375,
+            502.577880859375,
+            286.2823791503906,
+            511.4805908203125
+          ],
+          "content": "肌肉",
+          "style": {
+            "size": 7.4,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 23.42,
+            "height": 8.9
+          }
+        },
+        {
+          "id": "3_204_580",
+          "type": "label",
+          "bbox": [
+            204.07411193847656,
+            562.8329162597656,
+            230.6709442138672,
+            580.6383361816406
+          ],
+          "content": "間神經元",
+          "style": {
+            "size": 7.4,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "pdbpbblato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 26.6,
+            "height": 17.81
+          }
+        },
+        {
+          "id": "3_56_397",
+          "type": "caption",
+          "bbox": [
+            56.692901611328125,
+            369.6328125,
+            510.2362976074219,
+            397.40777587890625
+          ],
+          "content": "圖 3：關於肢體動作的感知和控制的本体感覺信號的回饋迴路。箭頭表示興奮性連接；填充的圓圈表示抑制性連接。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": true,
+            "serif": true,
+            "font_name": "ptserif-italic"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 453.54,
+            "height": 27.77
+          }
+        },
+        {
+          "id": "3_40_288",
+          "type": "sidebar",
+          "bbox": [
+            40.991798400878906,
+            275.7203063964844,
+            200.4698028564453,
+            288.9202880859375
+          ],
+          "content": "有關如何使用更多範例",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 159.48,
+            "height": 13.2
+          }
+        },
+        {
+          "id": "3_47_275",
+          "type": "sidebar",
+          "bbox": [
+            47.31679916381836,
+            262.52032470703125,
+            200.4698486328125,
+            275.7203063964844
+          ],
+          "content": "HTML 和 CSS 進行基於紙張的",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 153.15,
+            "height": 13.2
+          }
+        },
+        {
+          "id": "3_81_262",
+          "type": "sidebar",
+          "bbox": [
+            81.4718017578125,
+            249.3203125,
+            200.4698028564453,
+            262.5202941894531
+          ],
+          "content": "出版，請參閱 css4.pub。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 119.0,
+            "height": 13.2
+          }
+        },
+        {
+          "id": "3_226_349",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            294.8327941894531,
+            510.2362976074219,
+            349.0078125
+          ],
+          "content": "少數肌原纖維，並且不可收縮，但它確實有一個或多個感官末梢應用於其中。當肌肉拉伸時，內質纖維的中央部分被拉伸，每個感官末梢都會發出脈衝。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 283.46,
+            "height": 54.18
+          }
+        },
+        {
+          "id": "3_226_296",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            202.43280029296875,
+            510.23638916015625,
+            296.20782470703125
+          ],
+          "content": "肌肉梭也接受運動神經支配。供應外束肌纖維的大神經元稱為 α 運動神經元，而供應內質纖維收縮部分的小神經元稱為 γ 神經元。 γ 運動神經元可以調節肌肉梭的敏感度，以便在任何給定的肌肉長度下都能維持這種敏感度。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 283.46,
+            "height": 93.78
+          }
+        },
+        {
+          "id": "3_226_187",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            171.6278076171875,
+            305.440185546875,
+            187.08502197265625
+          ],
+          "content": "關節感受器",
+          "style": {
+            "size": 13.2,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "robotocondensed-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 78.67,
+            "height": 15.46
+          }
+        },
+        {
+          "id": "3_226_165",
+          "type": "body",
+          "bbox": [
+            226.77169799804688,
+            98.15283203125,
+            510.23626708984375,
+            165.52783203125
+          ],
+          "content": "關節感受器是低阈值機械感受器，已分為四組。它們傳遞關節功能的不同特徵（位置、運動、運動方向和速度）。自由感受器或 4 型關節感受器是nociceptors。",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": true,
+            "font_name": "ptserif-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 283.46,
+            "height": 67.38
+          }
+        },
+        {
+          "id": "3_56_658",
+          "type": "sidebar",
+          "bbox": [
+            56.692901611328125,
+            645.6220283508301,
+            135.81590270996094,
+            658.8220291137695
+          ],
+          "content": "來自 Wikibooks",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 79.12,
+            "height": 13.2
+          }
+        },
+        {
+          "id": "3_50_48",
+          "type": "sidebar",
+          "bbox": [
+            50.31290054321289,
+            35.66607666015625,
+            56.692901611328125,
+            48.8660888671875
+          ],
+          "content": "4",
+          "style": {
+            "size": 11.0,
+            "color": "#000000",
+            "bold": false,
+            "italic": false,
+            "serif": false,
+            "font_name": "drhchplato-regular"
+          },
+          "metadata": {
+            "page": 3,
+            "width": 6.38,
+            "height": 13.2
+          }
+        }
+      ]
+    }
+  ]
+}
