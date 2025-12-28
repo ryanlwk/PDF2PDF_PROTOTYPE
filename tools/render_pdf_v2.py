@@ -2,6 +2,7 @@ import fitz  # PyMuPDF
 import json
 import os
 import sys
+from datetime import datetime
 
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -73,7 +74,7 @@ def render_pdf_style_aware():
     """
     input_pdf = "somatosensory.pdf"
     input_json = "translated_layer_v2.json"
-    output_pdf = "final_output_v2.pdf"
+    output_pdf = "final_output2.pdf"
     
     # Font mapping
     font_map = {
@@ -125,6 +126,16 @@ def render_pdf_style_aware():
         data = json.load(f)
     
     total_rendered = 0
+    
+    # Initialize rendering log
+    rendering_log = {
+        "timestamp": datetime.now().isoformat(),
+        "source_json": input_json,
+        "output_pdf": output_pdf,
+        "rendered_blocks": [],
+        "failed_blocks": [],
+        "warnings": []
+    }
     
     # Process each page
     for page_idx, page in enumerate(doc):
@@ -187,6 +198,10 @@ def render_pdf_style_aware():
             x0, y0_pdf, x1, y1_pdf = block["bbox"]
             rect = fitz.Rect(x0, page_h - y1_pdf, x1, page_h - y0_pdf)
             
+            # Calculate original dimensions (before padding) for sizing heuristics
+            width = rect.width
+            height = rect.height
+            
             # Apply padding (prevent text touching borders)
             # deflate-style adjustment: shrink by 2pt horizontally, 1pt vertically
             rect = fitz.Rect(
@@ -201,11 +216,32 @@ def render_pdf_style_aware():
             # 1. Font Selection (based on bold flag and block type)
             font_key = select_font(style, b_type, font_map)
             
-            # 2. Font Size (use original size from extraction)
-            original_size = style.get("size", 10.5)
-            # Chinese characters are often slightly larger visually than English
-            # So we use original size directly or scale slightly down
-            target_size = original_size * 0.95  # 5% reduction for fit
+            # 2. Font Size (V1-style heuristic sizing - proven to work)
+            original_size = style.get("size", 10.5)  # Keep for reference
+            
+            # Geometry-based start size (like V1)
+            if b_type == "heading":
+                if page_idx == 0 and rect.y0 < 200:
+                    start_size = 24  # Main title
+                else:
+                    start_size = 16  # Section headings
+            elif b_type == "caption":
+                start_size = 9
+            elif b_type == "body":
+                if width < 130 or height < 20:
+                    start_size = 9  # Small labels/remarks
+                else:
+                    start_size = 10.5  # Body text
+            elif b_type in ["label", "sidebar", "table", "footer", "header"]:
+                start_size = 9
+            else:
+                start_size = 10.5  # Default
+            
+            # For very tight spaces, start smaller
+            if width < 40 and height < 15:
+                start_size = min(start_size, 7)
+            
+            target_size = start_size
             
             # 3. Text Color (use original color)
             text_color = style.get("color", "#000000")
@@ -217,9 +253,17 @@ def render_pdf_style_aware():
             # --- FITTING LOOP ---
             # Start with target size and shrink if needed
             fontsize = target_size
-            min_size = 6.0  # Minimum readable size
+            min_size = 3.0  # Allow very small for tight diagram labels
             
             while fontsize >= min_size:
+                # Adaptive line height for tight spaces
+                if height < 20:
+                    lineheight = 1.0
+                elif fontsize < 8:
+                    lineheight = 1.05
+                else:
+                    lineheight = 1.2
+                
                 rc = page.insert_textbox(
                     rect,
                     text,
@@ -227,30 +271,70 @@ def render_pdf_style_aware():
                     fontname=font_key,
                     color=color_rgb,
                     align=align,
-                    lineheight=1.2
+                    lineheight=lineheight
                 )
                 
                 if rc >= 0:  # Success
+                    rendering_log["rendered_blocks"].append({
+                        "id": block.get("id", f"p{page_idx}_unknown"),
+                        "page": page_idx + 1,
+                        "type": b_type,
+                        "fontsize": round(fontsize, 2),
+                        "target_size": round(target_size, 2),
+                        "rect_size": f"{width:.1f}×{height:.1f}"
+                    })
                     break
                 
-                fontsize -= 0.5  # Shrink and retry
+                # Adaptive step size
+                if fontsize > 10:
+                    fontsize -= 0.5
+                elif fontsize > 6:
+                    fontsize -= 0.25
+                else:
+                    fontsize -= 0.1
             
-            # Fallback: Force render at minimum size if still overflowing
+            # Log failure if we exhausted all sizes
             if fontsize < min_size:
+                rendering_log["failed_blocks"].append({
+                    "id": block.get("id", f"p{page_idx}_unknown"),
+                    "page": page_idx + 1,
+                    "type": b_type,
+                    "content_preview": text[:50] + ("..." if len(text) > 50 else ""),
+                    "rect_size": f"{width:.1f}×{height:.1f}",
+                    "target_size": round(target_size, 2)
+                })
+                # Force render anyway
                 page.insert_textbox(
-                    rect,
-                    text,
+                    rect, text,
                     fontsize=min_size,
                     fontname=font_key,
                     color=color_rgb,
                     align=align,
-                    lineheight=1.1  # Tighter line spacing for overflow
+                    lineheight=1.0
                 )
             
             blocks_rendered += 1
         
         total_rendered += blocks_rendered
         print(f"   ✅ Rendered {blocks_rendered} blocks")
+    
+    # Save rendering log
+    log_file = "rendering_log.json"
+    with open(log_file, "w", encoding="utf-8") as f:
+        json.dump(rendering_log, f, ensure_ascii=False, indent=2)
+    
+    print()
+    print(f"📋 Rendering Log: {log_file}")
+    print(f"   ✅ Successfully rendered: {len(rendering_log['rendered_blocks'])}")
+    print(f"   ⚠️  Failed to fit: {len(rendering_log['failed_blocks'])}")
+    
+    if rendering_log['failed_blocks']:
+        print()
+        print("   Failed blocks:")
+        for fb in rendering_log['failed_blocks'][:5]:  # Show first 5
+            print(f"      • Page {fb['page']}, {fb['type']}: {fb['content_preview']}")
+        if len(rendering_log['failed_blocks']) > 5:
+            print(f"      ... and {len(rendering_log['failed_blocks']) - 5} more")
     
     # Save output
     doc.save(output_pdf)
