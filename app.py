@@ -155,13 +155,13 @@ def display_pdf(file_path: str, height: int = 700, show_download: bool = False):
             st.caption(f"📄 {file_size_mb:.2f} MB - Using interactive PDF viewer")
             base64_pdf = base64.b64encode(pdf_bytes).decode('utf-8')
             pdf_html = f"""
-                <embed 
-                    src="data:application/pdf;base64,{base64_pdf}" 
+                <iframe 
+                    src="data:application/pdf;base64,{base64_pdf}#toolbar=0&navpanes=0&scrollbar=0" 
                     type="application/pdf" 
                     width="100%" 
                     height="{height}px"
                     style="border: 1px solid #ddd; border-radius: 4px;"
-                />
+                ></iframe>
             """
             st.markdown(pdf_html, unsafe_allow_html=True)
         
@@ -246,6 +246,7 @@ def step1_upload():
             # Clear previous results when uploading a new file
             st.session_state.result = None
             st.session_state.chat_history = []
+            st.session_state.config = None
         
         st.session_state.uploaded_file = uploaded
         st.success(f"✅ Loaded: {uploaded.name}")
@@ -261,6 +262,7 @@ def step1_upload():
             # Clear previous results when loading demo file
             st.session_state.result = None
             st.session_state.chat_history = []
+            st.session_state.config = None
             st.session_state.uploaded_file = MockFile()
             st.session_state.step = "configure"
             st.rerun()
