@@ -43,3 +43,4 @@ wheels/
 
 # Logs
 *.log
+.streamlit/secrets.toml

@@ -7,14 +7,10 @@ PDF RENDERING: Smart Hybrid (base64 <2MB, PyMuPDF images ≥2MB)
 import streamlit as st
 import os
 import base64
-from dotenv import load_dotenv
 import fitz  # PyMuPDF - for PDF to image conversion
 from models import JobConfig, ChatMessage, GlossaryType, LayoutPriority, ProcessResult
 from backend_wrapper import run_pipeline_subprocess
 from backend_mock import get_sample_chat_history, mock_process_chat_command
-
-# Load environment variables (API key)
-load_dotenv()
 
 # Page configuration
 st.set_page_config(
@@ -90,6 +86,59 @@ if "result" not in st.session_state:
     st.session_state.result = None
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
+
+
+def get_api_key():
+    """
+    Safely retrieve API key from Streamlit secrets.
+    
+    Returns:
+        str: API key if found, None otherwise
+        
+    Raises:
+        SystemExit: If API key is missing (stops app execution)
+    """
+    try:
+        api_key = st.secrets["OPENROUTER_API_KEY"]
+        if not api_key or api_key.strip() == "":
+            st.error("❌ **Configuration Error**: `OPENROUTER_API_KEY` is empty in Streamlit secrets.")
+            st.error("Please configure your API key in Streamlit Community Cloud secrets.")
+            st.stop()
+            return None
+        return api_key
+    except KeyError:
+        st.error("❌ **Configuration Error**: `OPENROUTER_API_KEY` not found in Streamlit secrets.")
+        st.error("Please add `OPENROUTER_API_KEY` to your Streamlit Community Cloud secrets.")
+        st.error("**How to fix:** Go to your app settings → Secrets → Add the key-value pair.")
+        st.stop()
+        return None
+    except Exception as e:
+        st.error(f"❌ **Configuration Error**: Failed to read API key from secrets: {str(e)}")
+        st.error("Please check your Streamlit Community Cloud secrets configuration.")
+        st.stop()
+        return None
+
+
+def get_model_name():
+    """
+    Safely retrieve model name from Streamlit secrets with fallback.
+    
+    Returns:
+        str: Model name from secrets, or default fallback value
+    """
+    try:
+        model_name = st.secrets.get("OPENROUTER_MODEL")
+        if model_name and model_name.strip() != "":
+            return model_name.strip()
+    except (KeyError, AttributeError):
+        # Key doesn't exist or secrets not available - use fallback
+        pass
+    except Exception as e:
+        # Log but don't fail - use fallback
+        st.warning(f"⚠️ Could not read OPENROUTER_MODEL from secrets: {str(e)}. Using default.")
+    
+    # Default fallback
+    return "google/gemini-2.0-flash-exp:free"
 
 
 def render_header():
@@ -323,14 +372,17 @@ def step3_workspace():
     
     # Process the PDF if not already done
     if not st.session_state.result:
-        # Check for API key
-        api_key = os.getenv("OPENROUTER_API_KEY")
-        if not api_key:
-            st.error("❌ OPENROUTER_API_KEY not found in .env file!")
+        # Get API key from Streamlit secrets with safety check
+        api_key = get_api_key()
+        if api_key is None:
+            # Error already displayed by get_api_key(), just return
             if st.button("← Back to Configure"):
                 st.session_state.step = "configure"
                 st.rerun()
             return
+        
+        # Get model name from Streamlit secrets with fallback
+        model_name = get_model_name()
         
         with st.spinner("🤖 AI Translation in progress... (This may take several minutes)"):
             try:
@@ -346,7 +398,7 @@ def step3_workspace():
                     input_file = os.path.abspath(st.session_state.uploaded_file.name)
                 
                 # Run real translation pipeline
-                output_pdf = run_pipeline_subprocess(input_file, api_key)
+                output_pdf = run_pipeline_subprocess(input_file, api_key, model_name)
                 
                 st.session_state.result = ProcessResult(
                     original_pdf_path=input_file,
