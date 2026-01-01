@@ -184,8 +184,7 @@ def display_pdf(file_path: str, height: int = 700, show_download: bool = False):
                     img_bytes = pix.tobytes("png")
                     
                     # Display as image
-                    st.image(img_bytes, use_container_width=True, 
-                            caption=f"Page {page_num + 1}")
+                    st.image(img_bytes, caption=f"Page {page_num + 1}")
                 
                 # Show pagination info
                 if len(pdf_doc) > max_pages:
@@ -200,8 +199,7 @@ def display_pdf(file_path: str, height: int = 700, show_download: bool = False):
                 label=f"⬇️ Download {filename}",
                 data=pdf_bytes,
                 file_name=filename,
-                mime="application/pdf",
-                use_container_width=True
+                mime="application/pdf"
             )
         
         return True
