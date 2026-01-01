@@ -1,5 +1,4 @@
-streamlit==1.52.2
-pydantic==2.12.5
-streamlit-pdf-viewer
-
-
+streamlit
+pymupdf
+python-dotenv
+openai
